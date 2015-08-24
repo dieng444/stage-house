@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+
+#block-body
+{
+	width:1024px;
+	margin:auto;
+}
+#img-container
+{
+	display:none;
+}
+#img-display-layout
+{
+	width:50%;
+	margin:auto;
+	height:400px;
+}
+#img-display-layout img
+{
+	width:100%;
+	height:auto;
+	display:block;
+}

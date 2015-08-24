@@ -1,0 +1,488 @@
+@include at-breakpoint($media-layout_8)
+{
+	font-size:0.96em;
+	
+	#user-profile-block-body,#company-profile-block-body
+    {
+    	 @include span-columns(8 omega,8);
+    	
+    	article
+    	{
+    		padding-left:4em;
+    		padding-right:4em;
+    		
+    		section#user-info
+    		{
+    			#b-img
+    			{
+    				@include span-columns(2,8);
+    				background-color: #fff;
+				    border: 1px solid #eee;
+				    @include border-radius(4px);
+				    box-shadow: 3px 3px 3px 3px;
+    			}
+    			#b-info
+    			{
+    				@include span-columns(6 omega,8);
+    			}
+    		}
+    		section#offers-container
+    		{
+    			h2
+				{
+					margin-top:24px;
+				}
+    			#container
+    			{
+    				display:flex;
+    			}
+    			.offer
+    			{
+    				@include span-columns(3,8);
+    			}
+    			
+    		}
+    		section#about-user
+    		{
+    			margin-top:60px;    			    			
+    		}
+	    	section#favorites-company
+	    	{
+	    		//@include span-columns(8 omega,8);
+	    		
+	    		#company-container
+	    		{
+	    			display:flex;
+	    		}
+				.company
+				{
+					@include span-columns(2,8);
+				}
+				h2
+				{
+					margin-bottom: 29px;
+    				margin-top: 25px;
+				}
+	    	}
+    	}
+    	
+    }
+    #contact-block-body
+    {
+    	@include span-columns(8 omega,8);
+    	 
+    	.sup-section
+		{
+		 	padding-left:4em;
+    		padding-right:4em;
+    		
+    		h1
+		 	{
+		 		text-align:left;
+		 	}
+		 	.success-message
+    	 	{
+    	 		text-align:center;
+    	 	}
+    		.field-box
+    	 	{
+    	 		.error-message
+	    	 	{
+	    	 		width:534px;
+	    	 		//display:block;
+	    	 	}
+	    	 	.first
+	    	 	{
+	    	 		width:350px;
+	    	 	}
+    	 		input
+    	 		{
+    	 			padding-left: 5px;
+    				width: 350px;
+    	 		}
+    	 		textarea
+    	 		{
+    	 			width:534px;
+    	 			height:200px;
+    	 		}
+    	 		.s-btn
+    	 		{
+    	 			width:240px;
+    	 		}
+    	 	}
+		}
+    }
+	#add-offer-block-body,#signup-block-body,#login-block-body
+    {
+    	 @include span-columns(8 omega,8);
+    	 
+    	 .sup-section
+    	 {
+    	 	padding-left:0em;
+    		padding-right:0em;
+    		max-width:50%;
+    		margin:auto;
+    		
+    		#submit-btn
+    	 	{
+    	 		width:350px;;
+    	 	}
+    	 	.sup-h1
+    	 	{
+    	 		width:55%;
+    	 		margin:auto;
+    	 		text-align:left;
+    	 	}
+    	 }
+    	 section
+    	 {
+    	 	font-size:1em;
+    		padding-left:4em;
+    		padding-right:4em;
+    		
+    		.success-message
+    	 	{
+    	 		text-align:center;
+    	 	}
+    		.field-box
+    	 	{
+    	 		.error-message
+	    	 	{
+	    	 		width:534px;
+	    	 		//display:block;
+	    	 	}
+	    	 	.first
+	    	 	{
+	    	 		width:350px;
+	    	 	}
+    	 		input,select
+    	 		{
+    	 			padding-left: 5px;
+    				width: 350px;
+    	 		}
+    	 		textarea
+    	 		{
+    	 			width:534px;
+    	 			height:200px;
+    	 		}
+    	 		.s-btn
+    	 		{
+    	 			width:240px;
+    	 		}
+    	 	}
+    	 }
+    }
+	 #desc-block-body,#about-block-body
+    {
+    	
+    	 @include span-columns(8 omega,8);
+    	 
+    	 article
+    	{
+    		font-size:1em;
+    		padding-left:4em;
+    		padding-right:4em;
+    		
+    		p.empty-offer-desc
+    		{
+    			text-align:center;
+    			font-size:1.3em;
+    			margin-bottom: 60px;
+    			margin-top: 60px;
+    		}
+    		#offer-header
+    		{
+    			display:flex;
+    			
+    			#company-logo
+    			{
+    				margin-right:5px;
+    			}
+    		}
+    	}
+    }
+    #top-line
+	{
+		@include span-columns(8 omega,8);
+		 padding-left: 5em;
+    	 padding-right: 5em;
+    	 
+    	 p:nth-child(1)
+    	 {
+    	 	@include span-columns(4,8);
+    	 }
+    	 p:nth-child(2)
+    	 {
+    	 	@include span-columns(4 omega,8);
+    	 }
+	}
+	header
+	{
+		 @include span-columns(8 omega,8);
+		 padding-left: 3em;
+    	 padding-right: 3em;
+    	
+		#banner
+		{
+			
+			#icone-menu
+			{
+				display:none;
+			}
+			#logo
+			{
+				@include span-columns(2,8);
+				margin-right:0px;
+				width: 160px;
+			}
+			#navigations
+			{
+				@include span-columns(6 omega,8);
+				position:relative;
+				z-index:0;
+				display:block;
+				height:51px;
+				margin-top:0px;
+				width:396px;
+				
+				nav
+				{
+					margin-top:0px;
+					padding-top:6px;				
+					ul
+					{
+						display:flex;
+						
+						li
+						{
+						    
+						    border-bottom:none;
+						    height:45px;
+						    margin-right:26px;
+						    font-size:0.95em;
+						    padding-left: 0px;
+						    
+						    &:nth-last-of-type(1)
+						    {
+						    	 margin-right:0px;
+						    }
+						    &:hover,&:active,&:focus
+						    {
+						    	border-bottom:3px solid $base-m;
+						    }	
+							a
+							{
+								color:#baaeae;
+								display:block;
+								height:36px;
+								padding-top:10px;
+								
+								&:hover
+								{
+									color:#fff;
+								}						
+							}
+						}
+					}
+				}
+			}	
+		} 						
+	}
+	#block-body
+    {
+    	@include span-columns(8 omega,8);
+    	
+    	#b-slider-stage
+		{
+			height:455px;
+			@include span-columns(8 omega,8);
+			padding-left: 4em;
+    		padding-right: 4em;
+    		
+    		
+			#img-display-layout
+			{
+				height:345px;
+				margin-bottom:29px;
+				max-width: 100%;
+				
+				#text-side
+				{
+					@include span-columns(4 omega,8);
+					z-index:0;
+					position:relative;
+					height:345px;
+					margin-right:0px;
+					
+					.texte
+					{
+						width:94%;
+						margin:auto;
+						margin-top:20px;
+						
+						h2
+						{
+							font-size: 1.7em;
+							margin-bottom: 15px;	
+							font-style:italic;									
+						}
+						h4
+						{
+							font-size:1.1em;
+							line-height:1.4;
+							margin-bottom: 15px;
+							font-style:italic;
+						}
+						p
+						{
+							display:block;
+							line-height:1.6;
+							color:#fff;
+							font-size:1em;
+							font-style:italic;
+						}
+						button
+						{
+							display:block;
+							border:none;
+							background-color:$base-m;
+							margin-top:20px;
+							padding:10px;
+							//position: absolute;
+    						//right: 0;
+    						//bottom:0;
+						}
+					}						
+				}
+				#iframe-btn-container
+				{
+					
+					#prev-iframe
+					{
+						@include span-columns(1,8);
+						width:35px;
+						position:absolute;
+						z-index:1;
+					}
+					#next-iframe
+					{
+						@include span-columns(1 omega,8);
+						width:35px;
+					}
+					.iframe-btn
+					{
+						height:45px;
+						margin-top:145px;
+						cursor:pointer;
+					}
+				}
+			}
+			#img-vignette-container
+			{
+				//width:204px;
+				@include border-radius(30px);
+    			padding-top: 5px;
+    		}
+		}
+		article
+		{
+			@include span-columns(8 omega,8);
+			font-size:0.98em;
+			
+			#b-offers
+			{
+				@include span-columns(8 omega,8);
+				padding-right:3.3em;
+				padding-left:3.3em;
+				margin-top: 15px;
+				
+				#offers-options
+				{
+					#left-opts
+					{
+						@include span-columns(4,8);
+						
+					}
+					#right-opts
+					{
+						@include span-columns(4 omega,8);
+					}	
+					#right-opts,#left-opts
+					{
+						select
+						{
+							height:36px;						
+						}	
+					}
+				}
+				#offers-container
+				{
+					@include span-columns(8 omega,8);
+					
+					.no-result-text
+					{
+						font-size: 1.5em;
+					    margin-bottom: 60px;
+					    margin-top: 60px;
+					    text-align: center;
+					}
+					.offer
+					{
+						width:100%;
+						float:left;
+						padding-top:10px;
+						//height:196px;
+						
+						.b-img
+						{
+							@include span-columns(2,8);
+							margin-right:0px;
+						}
+						.b-text
+						{
+							@include span-columns(6 omega,8);
+							padding-top:5px;
+							position:relative;
+							height:196px;
+							
+							.posted-time
+							{
+								position: absolute;
+								bottom: 0;						    
+							    right: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	footer
+    {
+    	@include span-columns(8 omega,8);
+    	padding-left: 3.3em;
+    	padding-right: 3.3em;
+    	
+    	#options-container
+    	{
+    		display:flex;
+    		
+	    	.foption
+		    {
+		    	width:26%;
+		    	
+		    	nav
+		    	{
+		    		ul
+		    		{
+		    			li
+		    			{
+		    				//height: 50px;
+	    					width: 94%;
+		    			}
+		    		}
+		    	}
+		    }
+		}
+	}
+}

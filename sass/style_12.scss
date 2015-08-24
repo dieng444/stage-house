@@ -1,0 +1,281 @@
+@include at-breakpoint($media-layout_12)
+{
+	#user-profile-block-body,#company-profile-block-body
+    {
+    	 @include span-columns(12 omega,12);
+    	
+    	article
+    	{
+    		
+    		max-width:64em;
+		 	min-width:64em;
+		 	padding-left:0em;
+    	 	padding-right:0em;
+		 	margin:auto;
+		 	margin-top:20px;
+    		padding-bottom:250px;
+    		
+    		h2
+    		{
+    			text-align:left;
+    		}
+    		section#user-info
+    		{
+    			margin-bottom:20px;
+    			
+    			#b-img
+    			{
+    				@include span-columns(2,12);
+    			}
+    		}
+    		section#offers-container
+    		{
+    			.offer
+    			{
+    				@include span-columns(3,12);
+    			}
+    			
+    		}
+    	}
+    }
+    #contact-block-body
+    {
+    	@include span-columns(12 omega,12);
+    	
+    	.sup-section
+    	{
+    		max-width:64em;
+		 	min-width:64em;
+		 	padding-left:0em;
+    	 	padding-right:0em;
+		 	margin:auto;
+		 	padding-bottom:300px;
+		 	
+		 	h1
+		 	{
+		 		text-align:left;
+		 	}
+    	}
+    }
+	#add-offer-block-body,#signup-block-body,#login-block-body
+    {
+    	@include span-columns(12 omega,12);
+    	
+    	 #login-section
+    	 {
+    	 	margin-top:40px;
+    	 	margin-bottom:60px;
+    	 }
+    	 .sup-section
+    	 {
+    	 	padding-left:0em;
+    		padding-right:0em;
+    		max-width:26%;
+    		min-width:26%;
+    		margin:auto;
+    		margin-top:30px;
+    		padding-bottom:300px;
+    		
+    		h1
+    		{
+    			font-size:2.5em;
+    			width: 58%;
+    		}
+    	 }
+    	 section
+    	 {
+    	 	max-width:64em;
+		 	min-width:64em;
+		 	padding-left:0em;
+    	 	padding-right:0em;
+		 	margin:auto;
+    	 }
+    }
+	 #desc-block-body,#about-block-body
+    {
+    	
+    	 @include span-columns(12 omega,12);
+    	 
+    	 article
+    	 {
+    	 	max-width:64em;
+		 	min-width:64em;
+		 	padding-left:0em;
+    	 	padding-right:0em;
+		 	margin:auto;
+		 	padding-bottom:300px;
+		 	
+		 	p.empty-offer-desc
+    		{
+    			margin-bottom:200px;
+    			margin-top:200px;
+    		}
+		 	#offer-header
+    		{    		
+    			#company-logo
+    			{
+    				 @include span-columns(2,12);
+    			}
+    		}
+    		#about-description
+    		{
+    			margin-top:40px;
+    	 		margin-bottom:60px;
+    	 		
+    	 		.abt-h2
+				{
+					margin-bottom:20px;
+				}
+    		}
+    	 }
+    }
+     #top-line
+	{
+		@include span-columns(12 omega,12);
+		 padding-left: 18em;
+    	 padding-right: 18em;
+		 
+    	 p:nth-child(1)
+    	 {
+    	 	@include span-columns(6,12);
+    	 }
+    	 p:nth-child(2)
+    	 {
+    	 	@include span-columns(6 omega,12);
+    	 }
+	}
+	header
+	{
+		 @include span-columns(12 omega,12);
+		 padding-left:0em;
+    	 padding-right:0em;
+    	 
+		 #banner
+		 {
+		 	max-width:63em;
+		 	min-width:63em;
+		 	margin:auto;
+		 	
+		 	#logo
+			{
+				width: 192px;
+			}
+			#navigations
+			{	
+				width:408px;
+							
+				nav
+				{									
+					ul
+					{												
+						li
+						{
+						    
+						    font-size:1em;
+						    
+						    &:hover
+						    {
+						    	border-bottom:3px solid $base-m;
+						    }			
+						}
+					}
+				}
+			}
+			
+		 }
+    }
+    #block-body
+    {
+    	@include span-columns(12 omega,12);
+    	
+    	#b-slider-stage
+		{
+			padding-left:0em;
+    		padding-right:0em;
+    		height:564px;
+    		
+			#img-display-layout
+			{
+				max-width:60em;
+			 	min-width:60em;
+			 	margin:auto;
+			 	margin-top:30px;
+				margin-bottom:28px;
+				height:454px;
+				outline: 0px solid #1a1c1e;
+				border:10px solid #1a1c1e;
+				
+				#text-side
+				{
+					//@include span-columns(6 omgea,12);
+					height:434px;
+					float:right;
+					
+					.texte
+					{
+						margin-left:40px;
+						
+						h2
+						{
+							font-size:2em;
+							margin-bottom:20px;										
+						}
+						h4
+						{
+							line-height:1.8;							
+						}
+						p
+						{
+							line-height:1.8;
+						}
+					}
+				}
+				#iframe-btn-container
+				{
+					.iframe-btn
+					{					
+						margin-top:181px;
+					}
+				}
+			}
+		}
+		article
+		{
+			@include span-columns(12 omega,12);
+			
+		 	#b-offers
+			{
+				float:none;
+				max-width:63em;
+		 		min-width:63em;
+				margin:auto;
+				margin-top:20px;
+				padding-right:0em;
+				padding-left:0em;
+				
+				#offers-container
+				{
+					.no-result-text
+					{
+					    margin-bottom:80px;
+					    margin-top:80px;
+					}
+				}
+			}
+			
+		}
+	}
+	footer
+	{
+		padding-left:0em;
+		padding-right:0em;
+		
+		#options-container
+		{
+			display:flex;
+			max-width:63em;
+	 		min-width:63em;
+			margin:auto;
+		}
+	}
+}
