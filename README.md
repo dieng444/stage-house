@@ -11,4 +11,4 @@ Identifiants de connexion pour le site
 Login : dupond14                                                               
 Password : stage
 
-Consulter le projet : http://www.stage-house.local/
+Consulter le projet : http://stagehouse.mackydieng.fr/
